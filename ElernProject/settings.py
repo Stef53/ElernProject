@@ -13,7 +13,9 @@ SECRET_KEY = 'django-insecure-$y)y5jzo&y%swo&4iwym&*cha()&r@xm1p_b8@kfn0a5pp8=gb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'stef123.pythonanywhere.com'
+]
 
 
 # Application definition
@@ -65,7 +67,9 @@ WSGI_APPLICATION = 'ElernProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': 'Stef123$sql_djo',
+        'USER': 'Stef123',
+        'HOST': 'Stef123.mysql.pythonanywhere-services.com'
     }
 }
 
