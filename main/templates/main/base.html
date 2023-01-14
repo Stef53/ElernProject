@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Probnik</title>
+    {% block css_additional %} {% endblock %}
+</head>
+<body>
+    <div class="page">
+        <header class="header" align="center";>
+            <h1><a class="logo" href="{% url 'home' %}">InfoIT</a></h1>
+        </header>
+
+        <div class="menu">
+            <div class="title"><h1>Навигация</h1></div>
+            <div class="list_menu">
+                <ul>
+                    <li><a href="{% url 'home' %}">Главная</a></li>
+                    <li><a href="{% url 'demand' %}">Востребованность</a></li>
+                    <li><a href="{% url 'geography' %}">География</a></li>
+                    <li> <a href="{% url 'skills' %}">Навыки</a></li>
+                    <li> <a href="{% url 'latest_vacancies' %}">Последние вакансии</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <main>
+            {% block content %} {% endblock %}
+        </main>
+
+        <footer class="footer">
+            <p>Чекменёв Степан Геннадьевич</p>
+            <p>РИ-210946</p>
+        </footer>
+    </div>
+</body>
+</html>
