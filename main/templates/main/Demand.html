@@ -11,5 +11,19 @@
 {% endblock %}
 
 {% block content %}
-    <h1 class="title">Тут точно есть текст</h1>
+    <h2 class="zagolovok">Востребованность</h2>
+{% endblock %}
+
+{% block table2 %}
+{% for el in demand %}
+        <table class="table">
+            <tr>
+                <td>{{ el.year }}</td>
+                <td>{{ el.salaryPerYear }}</td>
+                <td>{{ el.amountOfVacancies }}</td>
+                <td>{{ el.managerSalaryPerYear }}</td>
+                <td>{{ el.managerAmountOfVacancies }}</td>
+            </tr>
+        </table>
+{% endfor %}
 {% endblock %}

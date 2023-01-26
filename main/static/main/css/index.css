@@ -14,11 +14,12 @@
 }
 .header{
     background: linear-gradient(#FFFAFA, #FAEBD7);
-    font-size: 15px;
+    font-size: 25px;
     padding: 5px;
 }
 .logo{
     color: black;
+    font-size: 40;
 }
 .logo:hover{
     color: #FFCF48;
@@ -62,15 +63,6 @@ list_menu a:hover{ ё
     background: linear-gradient(#FFFAFA, #FAEBD7);
     margin-top: auto;
 }
-.boss{
-    font-family: Arial, "Helvetica Neue", Helvetica,sans-serif;
-    font-size: 30px;
-    padding: 20px;
-    margin-bottom: 50px;
-}
-.boss h1{
-    margin-bottom: 50px;
-}
 h2{
     font-size: 25px;
     margin: 10px 200px;
@@ -82,28 +74,18 @@ h2{
 .section{
     margin-bottom: 50px;
 }
-.table{
-    font-size: 50px;
-    margin-top: 300px;
+table, tr, td{
+    width: 960px;
+    margin: 0 auto;
+    font-size: 20px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-spacing: 50px 20px;
+    color-background: yellow;
 }
-
-.boss{
+.zagolovok{
     font-family: Arial, "Helvetica Neue", Helvetica,sans-serif;
-    font-size: 30px;
-    padding: 20px;
-    margin-bottom: 50px;
-}
-.boss h1{
-    margin-bottom: 50px;
-}
-h2{
-    font-size: 25px;
-    margin: 10px 200px;
-}
-.text{
-    font-size: 18px;
-    margin: 15px 200px;
-}
-.section{
-    margin-bottom: 50px;
+    font-size: 40px;
+    color: black
+    margin: center;
 }

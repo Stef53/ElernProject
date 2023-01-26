@@ -11,5 +11,14 @@
 {% endblock %}
 
 {% block content %}
-<h1>И тут</h1>
+<h2 class="zagolovok">География</h2>
+{% endblock %}
+
+{% block table %}
+{% for el in tasks %}
+        <div class="table">
+            <h3>{{ el.title }}</h3>
+            <p>{{ el.task }}</p>
+        </div>
+{% endfor %}
 {% endblock %}

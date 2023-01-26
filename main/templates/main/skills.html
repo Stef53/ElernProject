@@ -13,3 +13,12 @@
 {% block content %}
 <h1>Ну здесь точно</h1>
 {% endblock %}
+
+{% block table %}
+{% for el in tasks %}
+        <div class="table">
+            <h3>{{ el.title }}</h3>
+            <p>{{ el.task }}</p>
+        </div>
+{% endfor %}
+{% endblock %}
